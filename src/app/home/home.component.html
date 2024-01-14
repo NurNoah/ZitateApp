@@ -10,6 +10,7 @@
         #zitat
         placeholder="Zitat"
         (keyup)="zs.resetcolordinput()"
+        (keyup)="zs.enterpres($event, zitat.value)"
       />
     </div>
       <button id="button1" (click)="zs.pushnewZitat(zitat.value)">

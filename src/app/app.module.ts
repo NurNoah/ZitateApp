@@ -9,6 +9,10 @@ import { SettingsDialogComponent } from './settings-dialog/settings-dialog.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ZitateArrayComponent } from './zitate-array/zitate-array.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { PopupNewNameComponent } from './popup-new-name/popup-new-name.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -17,13 +21,17 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     HomeComponent,
     SettingsDialogComponent,
     ZitateArrayComponent,
-    DropdownComponent
+    DropdownComponent,
+    PopupNewNameComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    MatIconModule,
+MatButtonModule,
+MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
