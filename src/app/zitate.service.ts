@@ -9,19 +9,13 @@ export class ZitateService {
   constructor(public drops: DropdownService) { }
 
   dataArray: string[] = [
-    'Element 1',
-    'Element 2',
-    'Element 3',
-    'Element 1',
-    'Element 2',
-    'Element 3',
-
+ 
   ];
 
   pushnewZitat(newZitat: string) {
 
     if(this.validation(newZitat)){
-      const result = this.drops.selectedOption + ": " + newZitat
+      const result = this.drops.selectedOption + ": " + newZitat + " #" + (this.dataArray.length + 1)
 
       this.deletvalue()
       this.dataArray.push(result)
