@@ -1,0 +1,21 @@
+<body id="bdy" class="light-mode">
+    <div class="main">
+      <app-zitate-array></app-zitate-array>
+      <div class="actionbuttons">
+      <app-dropdown class="dropdown"></app-dropdown>
+      <input
+        class="abstand"
+        id="zitat"
+        type="text"
+        #zitat
+        placeholder="Zitat"
+        (keyup)="zs.resetcolordinput()"
+      />
+    </div>
+      <button id="button1" (click)="zs.pushnewZitat(zitat.value)">
+        Senden
+      </button>
+  
+    </div>
+  </body>
+  

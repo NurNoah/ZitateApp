@@ -1,0 +1,29 @@
+/* array-display.component.css */
+
+.array-container {
+  height: 400px;
+  width: 700px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 2px solid #4caf50;
+}
+
+.array-item {
+  padding: 10px;
+  border-bottom: 1px solid #4caf50;
+ 
+}
+
+.array-item:hover {
+  background-color: #4caf4f1f;
+}
+.array-item:last-child {
+  border-bottom: none;
+}
+
+.dark-mode .array-container {
+  background-color: #212324;
+}

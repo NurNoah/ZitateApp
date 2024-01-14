@@ -1,0 +1,10 @@
+<!-- dropdown.component.html -->
+<body id="bdy6" class="light-mode">
+<div>
+    <select id="dropdown" [(ngModel)]="drops.selectedOption" (change)="zs.resetcolordropbox()">
+        <option disabled selected value="">Name auswählen</option>
+      <option *ngFor="let option of drops.options" [value]="option">{{ option }}</option>
+    </select>
+  </div>
+</body>
+  
