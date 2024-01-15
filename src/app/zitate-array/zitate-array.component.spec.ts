@@ -8,9 +8,9 @@ describe('ZitateArrayComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ZitateArrayComponent ]
+      declarations: [ZitateArrayComponent]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(ZitateArrayComponent);
     component = fixture.componentInstance;

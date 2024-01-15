@@ -8,5 +8,5 @@ import { ZitateService } from '../zitate.service';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent {
- constructor(public drops: DropdownService, public zs: ZitateService){}
+  constructor(public drops: DropdownService, public zs: ZitateService) { }
 }

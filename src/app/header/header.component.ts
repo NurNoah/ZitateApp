@@ -8,5 +8,5 @@ import { SettingsService } from '../settings.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  constructor(public ds: DarkmodeService, public op: SettingsService){}
+  constructor(public ds: DarkmodeService, public op: SettingsService) { }
 }

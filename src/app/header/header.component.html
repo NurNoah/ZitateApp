@@ -1,21 +1,10 @@
 <body id="bdy2" class="light-mode">
-    <header>
-      <div class="main">
-        <a
-          href="https://discord.gg/tGHcmE2qVg"
-          ><img routerLink="/home" class="logo" src="assets/img/headericon.png" />
-        </a>
-        <img
-          class="dark-button"
-          src="{{ ds.darkmodeIMG }}"
-          (click)="ds.toggleDarkmode()"
-        />
-        <img
-          class="settings-button"
-          src="{{ ds.settingIMG }}"
-          (click)="op.openSettingsDialogdeaktivate()"
-        />
-      </div> 
-    </header>
-  </body> 
-  
+  <header>
+    <div class="main">
+      <a href="https://discord.gg/tGHcmE2qVg"><img routerLink="/home" class="logo" src="assets/img/headericon.png" />
+      </a>
+      <img class="dark-button" src="{{ ds.darkmodeIMG }}" (click)="ds.toggleDarkmode()" />
+      <img class="settings-button" src="{{ ds.settingIMG }}" (click)="op.openSettingsDialogdeaktivate()" />
+    </div>
+  </header>
+</body>

@@ -1,25 +1,14 @@
 <body id="bdy7" class="light-mode">
-    <div class="main">
-      <h2>Anderern Name Wählen</h2>
-  
-      <div class="test">
-        <input
-          class="abstand"
-          id="newName"
-          type="text"
-          #newName
-          placeholder="Neuer Name"
-          (keyup)="closeDialogEnter($event, newName.value)"
-        />
-       
-      </div>
-        <button
-          class="savebutton"
-          id="savebutton"
-          (click)="closeDialog(newName.value)"
-        >
-         Speichern
-        </button>
+  <div class="main">
+    <h2>Anderern Name Wählen</h2>
+
+    <div class="test">
+      <input class="abstand" id="newName" type="text" #newName placeholder="Neuer Name"
+        (keyup)="closeDialogEnter($event, newName.value)" />
+
     </div>
-  </body>
-  
+    <button class="savebutton" id="savebutton" (click)="closeDialog(newName.value)">
+      Speichern
+    </button>
+  </div>
+</body>

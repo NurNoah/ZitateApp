@@ -11,7 +11,7 @@ export class SettingsService {
   constructor(
     private dialog: MatDialog,
     public ds: DarkmodeService,
-  ) {}
+  ) { }
   arbeitszeitValitext = '';
   speichernbutton = 'Speichern';
 
@@ -49,7 +49,7 @@ export class SettingsService {
   onSave(arbeitszeit: string) {
     let splitS: string[];
 
-   console.log("close settings")
+    console.log("close settings")
 
   }
 

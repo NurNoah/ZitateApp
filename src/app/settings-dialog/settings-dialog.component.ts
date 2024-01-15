@@ -13,7 +13,7 @@ export class SettingsDialogComponent {
     private dialogRef: MatDialogRef<SettingsDialogComponent>,
     public ds: DarkmodeService,
     public op: SettingsService
-  ) {}
+  ) { }
 
   arbeitszeitValitext = '';
 

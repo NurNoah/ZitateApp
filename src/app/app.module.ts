@@ -30,8 +30,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     BrowserAnimationsModule,
     FormsModule,
     MatIconModule,
-MatButtonModule,
-MatDialogModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

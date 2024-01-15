@@ -8,6 +8,6 @@ import { ZitateService } from '../zitate.service';
 })
 export class ZitateArrayComponent {
 
-  constructor(public zs: ZitateService){ }
+  constructor(public zs: ZitateService) { }
 
 }

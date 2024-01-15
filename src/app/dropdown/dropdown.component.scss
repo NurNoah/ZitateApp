@@ -1,32 +1,32 @@
 /* dropdown.component.css */
 
 div {
-    text-align: center;
- 
-  }
-  
-  label {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  select {
-    width: 160px;
-    height: 60px;
-    font-size: 16px;
-    border: 4px solid #28a745; /* Grüner Rand */
-    border-radius: 5px;
-    text-align: center;
-  }
+  text-align: center;
 
-  .dark-mode select {
-    background-color: #212324;
-    color: #fff;
-  }
-  
-  p {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #333;
-  }
-  
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+select {
+  width: 160px;
+  height: 60px;
+  font-size: 16px;
+  border: 4px solid #28a745;
+  /* Grüner Rand */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dark-mode select {
+  background-color: #212324;
+  color: #fff;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}

@@ -67,9 +67,9 @@ export class ZitateService {
 
   resetcolordropbox() {
 
-    if (this.drops.selectedOption == 'Andere') {
+    if (this.drops.selectedOption == '+Andere') {
       this.pop.openPopUP();
-    
+
     }
 
     const dropdownElement = document.getElementById("dropdown");

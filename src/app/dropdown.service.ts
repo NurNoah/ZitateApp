@@ -16,7 +16,7 @@ export class DropdownService {
     'Paul',
     'Domi',
     'Reither',
-    'Andere',
+    '+Andere',
   ];
   selectedOption: string = '';
 
