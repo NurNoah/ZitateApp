@@ -14,4 +14,8 @@ export class ApiService {
   getAllData():Observable<any>{
     return this._http.get(`${this.apiUrl}`);
   }
+
+  createNewZitat(data:any):Observable<any>{
+    return this._http.post(`${this.apiUrl}`,data)
+  }
 }

@@ -1,26 +1,46 @@
 import { Injectable } from '@angular/core';
 import { DropdownService } from './dropdown.service';
 import { PopupNewNameService } from './popup-new-name.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { ApiService } from './api.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ZitateService {
+export class ZitateService{
 
-  constructor(public drops: DropdownService, public pop: PopupNewNameService) { }
-
+  constructor(public drops: DropdownService, public pop: PopupNewNameService, private fb:FormBuilder, public api:ApiService) { }
+  zitate: any;
+  userFrom: FormGroup | undefined;
   dataArray: string[] = [
 
   ];
 
+  getAllUsers(){
+    this.api.getAllData().subscribe((res)=>{
+      this.zitate = res.data;
+    });
+  }
+
   pushnewZitat(newZitat: string) {
 
     if (this.validation(newZitat)) {
-      const result = this.drops.selectedOption + ": " + newZitat + " #" + (this.dataArray.length + 1)
+      const result = this.drops.selectedOption + ": " + newZitat
 
       this.deletvalue()
       this.dataArray.push(result)
+
+      this.userFrom = this.fb.group({
+        name: [this.drops.selectedOption],
+        msg: [newZitat]
+      });
+      this.api.createNewZitat(this.userFrom.value).subscribe((res)=>{
+        console.log(res, 'data submitted');
+        this.userFrom?.reset();
+        this.getAllUsers()
+      })
     }
+    this.getAllUsers()
   }
 
   deletvalue() {

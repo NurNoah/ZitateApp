@@ -8,15 +8,11 @@ import { ApiService } from '../api.service';
   styleUrls: ['./zitate-array.component.scss']
 })
 export class ZitateArrayComponent {
-  zitate: any;
+  
   constructor(public zs: ZitateService, private api: ApiService) { }
   ngOnInit():void{
-    this.getAllUsers();
+    this.zs.getAllUsers();
   }
 
-  getAllUsers(){
-    this.api.getAllData().subscribe((res)=>{
-      this.zitate = res.data;
-    });
-  }
+  
 }
