@@ -13,6 +13,7 @@ import { PopupNewNameComponent } from './popup-new-name/popup-new-name.component
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatIconModule,
     MatButtonModule,
     MatDialogModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

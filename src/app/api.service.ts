@@ -9,7 +9,7 @@ export class ApiService {
 
 
   constructor(private _http: HttpClient) { }
-  apiUrl = 'Https://127.0.0.1/zitate';
+  apiUrl = 'http://localhost:8000/api/zitate';
 
   getAllData():Observable<any>{
     return this._http.get(`${this.apiUrl}`);
