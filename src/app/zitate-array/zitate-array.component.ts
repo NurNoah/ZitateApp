@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { ZitateService } from '../zitate.service';
 import { ApiService } from '../api.service';
 
+
+
 @Component({
   selector: 'app-zitate-array',
   templateUrl: './zitate-array.component.html',

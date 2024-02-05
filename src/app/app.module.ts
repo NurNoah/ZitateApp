@@ -14,6 +14,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HttpClientModule } from '@angular/common/http';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatDialogModule,
     HttpClientModule,
+    ScrollPanelModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
