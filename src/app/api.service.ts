@@ -9,7 +9,7 @@ export class ApiService {
 
 
   constructor(private _http: HttpClient) { }
-  apiUrl = 'https://zitateappbackend.onrender.com/api/zitate';
+  apiUrl = 'api';
 
   getAllData():Observable<any>{
     return this._http.get(`${this.apiUrl}`);
