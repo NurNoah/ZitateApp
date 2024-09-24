@@ -3,6 +3,7 @@ import { DropdownService } from './dropdown.service';
 import { PopupNewNameService } from './popup-new-name.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { ApiService } from './api.service';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,14 +13,20 @@ export class ZitateService{
   constructor(public drops: DropdownService, public pop: PopupNewNameService, private fb:FormBuilder, public api:ApiService) { }
   zitate: any;
   userFrom: FormGroup | undefined;
+  dataFetched$ = new Subject<void>(); // Subject zur Benachrichtigung
   dataArray: string[] = [
 
   ];
+
+  scrollToPosition(callback: () => void){
+    callback();
+  }
 
   getAllUsers(){
     this.api.getAllData().subscribe((res)=>{
       this.zitate = res.data;
     });
+    this.dataFetched$.next();
   }
 
   pushnewZitat(newZitat: string) {
